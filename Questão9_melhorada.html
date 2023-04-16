@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9</title>
+</head>
+<body>
+    <script>
+        function mes() {
+            var num = prompt('Digite um número inteiro entre 1 e 12');
+            num = parseInt(num);
+    
+            // Array com os nomes dos meses
+            var meses = [
+                'Janeiro', 'Fevereiro', 'Março', 'Abril',
+                'Maio', 'Junho', 'Julho', 'Agosto',
+                'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+            ];
+    
+            // Validação do número digitado
+            if (num >= 1 && num <= 12) {
+                alert(meses[num - 1]); // Exibe o nome do mês correspondente
+            } else {
+                alert('Número inválido'); // Exibe mensagem de número inválido
+            }
+        }
+        mes();
+    </script>
+    
+</body>
+</html>

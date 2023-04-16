@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imprimir Valores em Ordem Crescente</title>
+</head>
+<body>
+    <h1>Imprimir Valores em Ordem Crescente</h1>
+    <form>
+        <label for="valorA">Valor A: </label>
+        <input type="number" id="valorA"><br>
+
+        <label for="valorB">Valor B: </label>
+        <input type="number" id="valorB"><br>
+
+        <button type="button" onclick="imprimirOrdemCrescente()">Imprimir em Ordem Crescente</button>
+    </form>
+
+    <p id="resultado"></p>
+
+
+    <script>
+        function imprimirOrdemCrescente() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+
+            if (isNaN(a) || isNaN(b)) {
+                alert("Por favor, insira valores numéricos válidos!");
+                return;
+            }
+
+            if (a < b) {
+                document.getElementById("resultado").innerHTML = "Valores em ordem crescente: " + a + ", " + b;
+            } else if (a > b) {
+                document.getElementById("resultado").innerHTML = "Valores em ordem crescente: " + b + ", " + a;
+            } else {
+                document.getElementById("resultado").innerHTML = "Os valores são iguais: " + a + " = " + b;
+            }
+        }
+    </script>
+
+</body>
+</html>

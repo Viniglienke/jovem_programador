@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+/*
+        var nomes = [
+            "Cris",
+            "Maicon",
+            "Daniel",
+            "Jefersson",
+            "Josiani",
+            "Vinicius",
+            "Thiago"
+        ]
+
+        for (let index = 0; index < nomes.length; index++) {
+            console.log(nomes[index]);
+
+        }
+
+        nomes.forEach(element => {
+            console.log(element)
+            });
+
+
+        var i = 0;
+        while (i < nomes.length) {
+            console.log(nomes[i]);
+            i++;
+        }
+        
+*/
+
+// ATIVIDADES
+// 1 - Criar do while e mostrar todos os nomes do array de nomes
+    var nomes = [
+            "Cris",
+            "Maicon",
+            "Daniel",
+            "Jefersson",
+            "Josiani",
+            "Vinicius",
+            "Thiago"
+        ]
+
+    var i = 0;
+    
+        do {console.log(nomes[i]);
+            i++;
+        } while (i < nomes.length);
+
+
+
+// 2 - Criar uma função sem parametros, dentro da função executar um
+// for e mostrar todos os nomes do array nomes
+
+function mostrarNomes() {
+    for (let index = 0; index < nomes.length; index++) {
+        console.log(nomes[index]);
+    }
+    
+}
+//Chamada da função
+mostrarNomes();
+
+
+// 3 - Criar uma função com parametros, o parametro vai ser o array nomes
+// dentro da função executar um while e mostar todos os nomes do array nomes
+
+
+function mostraNomesParametros(n) {
+
+    var i = 0;
+    while (i < n.length) {
+        console.log(n[i]);
+        i++;
+    }
+}
+//Chamada da função
+mostraNomesParametros(nomes)
+
+
+
+
+
+// Criar uma função que faça a amostragem de qualquer mensagem passada pelo prompt()
+
+    var mensagem = prompt("Digite uma frase");
+
+    function mostrar(m) {
+    alert(m)
+    console.log(m)
+
+    }
+mostrar(mensagem)
+
+
+</script>
+
+
+</body>
+</html>

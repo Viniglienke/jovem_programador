@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <h1>É maior?</h1>
+    <form>
+        <label for="valorA">Valor A: </label>
+        <input type="number" id="valorA"><br>
+
+        <label for="valorB">Valor B: </label>
+        <input type="number" id="valorB"><br>
+
+        <button type="button" onclick="verificaTamanho()">Verificar</button>
+    </form>
+
+    <script>
+        function verificaTamanho() {
+            var num1 = parseInt(document.getElementById("valorA").value);
+            var num2 = parseInt(document.getElementById("valorB").value);
+
+            if(num1 > num2) {
+                alert('A maior que B')
+            }else if(num1 == num2) {
+                alert('Os valores são iguais')
+            }else if(num1 < num2) {
+                alert('A menor que B')
+            }
+        }
+    </script>
+</body>
+</html>
